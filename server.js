@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var counter=0;
-app.get('/cout', function (req, res) {
+app.get('/count', function (req, res) {
   counter++;
   res.send(counter.toString());
 });
