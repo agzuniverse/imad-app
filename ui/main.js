@@ -2,9 +2,9 @@ function requester(){
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         console.log("state changed!")
-        if(request.readyState===XMLHttpRequest.DONE && request.status===200){
+        if(request.readyState==XMLHttpRequest.DONE && request.status==200){
             console.log("request done succesfully");
-            counter=request.responseText();
+            counter=request.responseText;
             document.getElementById('count').innerHTML=counter.toString();
         }
     }
