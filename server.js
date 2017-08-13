@@ -30,9 +30,8 @@ app.get('/test-db',function(req,res){
         else{
             res.send(JSON.stringify(result));
         }
-        }
-    })
-})
+    });
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
