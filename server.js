@@ -40,7 +40,7 @@ function hash(input,salt){
 }
 
 app.get('/hash/:input',function(req,res){
-    var hsh=hash(request.params.input,"saltystring");
+    var hsh=hash(req.params.input,"saltystring");
     res.song(hsh);
 });
 
