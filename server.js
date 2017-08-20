@@ -41,7 +41,7 @@ function hash(input,salt){
 
 app.get('/hash/:input',function(req,res){
     var hsh=hash(req.params.input,"saltystring");
-    res.song(hsh);
+    res.send(hsh);
 });
 
 app.get('/', function (req, res) {
